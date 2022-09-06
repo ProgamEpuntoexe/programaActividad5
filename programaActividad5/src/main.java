@@ -44,7 +44,10 @@ public class main {
         System.out.println("Division:");
         System.out.println(x + " / "+ y + " = "+division(x,y));
         System.out.println(y + " / "+ x + " = "+divisionInversa(x,y));
-        System.out.println("NOTA: Se hizo restas y divisiones normales e inversas");
+        System.out.println("Modulacion:");
+        System.out.println(x + " % "+ y + " = "+modulacion(x,y));
+        System.out.println(y + " % "+ x + " = "+modulacionInversa(x,y));
+        System.out.println("NOTA: Se hizo restas, divisiones y modulaciones normales e inversas");
         //Despedida
         System.out.print("Gracias por usar el programa, presione Enter para salir");
         //Esto sirve para que el programa espere a que el usuario pulse enter para terminar
@@ -84,6 +87,18 @@ public class main {
     private static float divisionInversa(float x, float y){
         float resultado;
         resultado = y / x;
+        return resultado;
+    }
+    //Modulacion
+    private static float modulacion(float x, float y){
+        float resultado;
+        resultado = x % y;
+        return resultado;
+    }
+    //Modulacion inversa
+    private static float modulacionInversa(float x, float y){
+        float resultado;
+        resultado = y % x;
         return resultado;
     }
 }
